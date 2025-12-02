@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định vị Thành Phố</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📍 Bạn đang ở đâu?</h1>
+        <p>Bấm nút bên dưới để gửi tọa độ về Server Python và lấy tên thành phố.</p>
+        
+        <button id="findMeBtn">📍 Tìm vị trí của tôi</button>
+
+        <div id="result" class="result-box hidden">
+            <p><strong>Tọa độ:</strong> <span id="coords">--</span></p>
+            <p><strong>Thành phố:</strong> <span id="city-name" class="highlight">--</span></p>
+            <p class="small">Chi tiết: <span id="full-addr">--</span></p>
+        </div>
+        
+        <p id="status" class="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
