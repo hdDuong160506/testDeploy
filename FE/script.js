@@ -33,7 +33,7 @@ function error() {
 
 async function sendToBackend(lat, lon) {
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/get-city', {
+        const response = await fetch('https://testdeploy-be-enfr.onrender.com', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
